@@ -3,7 +3,6 @@ import './App.css';
 import Character from "./characters";
 
 function App() {
-  const [isUserLoggedIn, setUserLoggedState] = useState(true);
   const [characters, setCharacters] = useState([]);
 
   useEffect(() => {
@@ -19,13 +18,9 @@ function App() {
     console.log("updated", characters);
   }, [characters]);
 
-  const handleClick = () => {
-    setUserLoggedState(!isUserLoggedIn);
-  }
 
   return (
     <div className="App">
-      <button onClick={handleClick}>Click me to toggle logged in state</button>
       <h4>Characters</h4>
       <ul>
           {characters.map(character => {
