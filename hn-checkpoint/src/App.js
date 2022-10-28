@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import './App.css';
 import Articles from "./articles";
 
+
+
+
 function App() {
   const [articles, setArticles] = useState([]);
   const [search, setSearch] = useState('');
@@ -37,10 +40,17 @@ function App() {
                             <h2>Hacker News</h2>
                         </div>
                     <div className="searchHeader_input">
-                            <input
-                                type="text"
-                                value= {search}
-                                onChange={event => setSearch(event.target.value)}/>
+
+                            <div className="inputContainer">
+                                <i className="fa fa-search" aria-hidden="true"></i>
+                        <input
+                                type="search"
+                                placeholder="Search stories by title, url or author"
+                                className = "searchInput"
+                                onChange={event => setSearch(event.target.value)}
+                                value= {search}/>
+                            </div>
+
                     </div>
                 </div>
             </header>
