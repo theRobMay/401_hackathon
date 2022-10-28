@@ -22,18 +22,39 @@ function App() {
 
   return (
     <div className="App">
-      <h4>HN</h4>
-        <div className="appHeader">
-            <input
-                type="text"
-                value={search}
-                onChange={event => setSearch(event.target.value)}/>
-      <ul>
-          {articles.map(article => {
-              return <Articles data={article}/>
-          })}
-      </ul>
+      <div className="default">
+        <div className="container">
+            <header className="searchHeader_container">
+                <div className="searchHeader_search">
+                    <span className="searchHeader_logo">
+                        <a href="https://news.ycombinator.com">
+                            <img src="https://d1sz9gun5ag95e.cloudfront.net/packs/media/images/logo-hn-search-a822432b.png" alt="HackerNewsLogo"></img>
+                        </a>
+
+                    </span>
+                        <div className="searchHeader_label">
+                            <h2>Search</h2>
+                            <h2>Hacker News</h2>
+                        </div>
+                    <div className="searchHeader_input">
+                            <input
+                                type="text"
+                                value= {search}
+                                onChange={event => setSearch(event.target.value)}/>
+                    </div>
+                </div>
+            </header>
         </div>
+
+        <div className="appBody">
+
+            <ul>
+            {articles.map(article => {
+              return <Articles data={article}/>
+            })}
+            </ul>
+        </div>
+      </div>
     </div>
   );
 }

@@ -3,9 +3,85 @@
 /*$neon-blue: #5468FFff;*/
 /*$battleship-grey: #888885ff;*/
 /*$atomic-tangerine: #FCA372ff;*/
+/*$orange-crayola: #FF732Bff;*/
+/*$peach-crayola: #FFC49Eff;*/
+/*$linen: #FFF1E7ff;*/
+/*$white: #FFFFFFff;*/
+/*$black: #060301ff;*/
 
-.appHeader {
-    background-color: #F6F6EFff;
-    margin-left: 5%;
-    width: calc(85% - 10px);
+* {
+    box-sizing: border-box;
 }
+
+
+
+.default {
+    min-height: 100vh;
+    display: block;
+}
+
+.container {
+    margin-left: 7.5%;
+    width: 85%;
+    display: block;
+    height: 0px;
+}
+
+.searchHeader_container {
+    width: 100%!important;
+    margin: 0 auto;
+    display:block;
+
+}
+
+.searchHeader_search {
+    display: flex;
+    align-items: center;
+    background: #ff742b;
+    height: 60px;
+    padding: 4px;
+    position: relative;
+    justify-content: space-between;
+}
+
+
+img {
+    height: 50px;
+
+}
+
+ul{
+    list-style: none;
+    height: auto;
+}
+
+.appBody {
+    background-color: #F6F6EFff;
+    margin-left: 7.5%;
+    width: 85%;
+    margin-top: 100px;
+
+}
+
+h2 {
+    display:block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-size: 19px;
+    line-height: 0;
+    font-weight: normal;
+    font-family: Verdana, Geneva, sans-serif;
+    margin-right: 700px;
+    padding: 1px;
+    color: black;
+}
+
+h4 {
+    padding-top: 15px;
+    margin-bottom: 15px;
+    line-height: 0;
+}
+
+
