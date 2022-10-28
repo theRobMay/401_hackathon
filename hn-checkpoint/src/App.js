@@ -33,25 +33,22 @@ function App() {
                         <a href="https://news.ycombinator.com">
                             <img src="https://d1sz9gun5ag95e.cloudfront.net/packs/media/images/logo-hn-search-a822432b.png" alt="HackerNewsLogo"></img>
                         </a>
-
                     </span>
                         <div className="searchHeader_label">
                             <h2>Search</h2>
                             <h2>Hacker News</h2>
                         </div>
-                    <div className="searchHeader_input">
-                        <div className="inputContainer">
-                                <i className="fa fa-search" aria-hidden="true" id="magnifying"></i>
-                            <input
-                                type="search"
-                                placeholder="Search stories by title, url or author"
-                                className = "searchInput"
-                                onChange={event => setSearch(event.target.value)}
-                                value= {search}/>
-
-                        </div>
-
-                    </div>
+                    <span>
+                        <button className ="glass">
+                            <img className ="magnifying" src="https://icones.pro/wp-content/uploads/2021/06/icone-loupe-orange.png" alt="magnifying"></img>
+                        </button>
+                    </span>
+                        <input
+                            className = "searchInput"
+                            type="search"
+                            placeholder="Search stories by title, url or author"
+                            onChange={event => setSearch(event.target.value)}
+                            value= {search}/>
                 </div>
             </header>
         </div>
