@@ -40,16 +40,16 @@ function App() {
                             <h2>Hacker News</h2>
                         </div>
                     <div className="searchHeader_input">
-
-                            <div className="inputContainer">
-                                <i className="fa fa-search" aria-hidden="true"></i>
-                        <input
+                        <div className="inputContainer">
+                                <i className="fa fa-search" aria-hidden="true" id="magnifying"></i>
+                            <input
                                 type="search"
                                 placeholder="Search stories by title, url or author"
                                 className = "searchInput"
                                 onChange={event => setSearch(event.target.value)}
                                 value= {search}/>
-                            </div>
+
+                        </div>
 
                     </div>
                 </div>
