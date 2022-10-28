@@ -6,19 +6,14 @@ function App() {
   const [articles, setArticles] = useState([]);
   const [search, setSearch] = useState('');
 
-  const url = `http://hn.algolia.com/api/v1/search?query=`+ search;
-
-  const fetchURL = () => {
-      fetch(url)
-          .then((response) => response.json())
-          .then((data) => {
-              setArticles(data.hits);
-          });
-  };
-
-  useEffect(() => {
-    console.log("mounted");
-    fetchURL()}, []);
+    useEffect(() => {
+        fetch(`http://hn.algolia.com/api/v1/search?query=`+ search)
+            .then((response) => response.json())
+            .then((data) => {
+                setArticles(data.hits);
+            });
+        }, [search]);
+    
 
   useEffect(() => {
     console.log("updated", articles);
@@ -29,7 +24,7 @@ function App() {
     <div className="App">
       <h4>HN</h4>
         <input
-            type="search"
+            type="text"
             value={search}
             onChange={event => setSearch(event.target.value)}/>
       <ul>
