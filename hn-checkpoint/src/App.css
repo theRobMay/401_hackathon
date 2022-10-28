@@ -6,4 +6,6 @@
 
 .appHeader {
     background-color: #F6F6EFff;
+    margin-left: 5%;
+    width: calc(85% - 10px);
 }
