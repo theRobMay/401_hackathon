@@ -1,0 +1,11 @@
+/*$baby-powder: #F6F6EFff;*/
+/*$spanish-orange: #E36626ff;*/
+/*$neon-blue: #5468FFff;*/
+/*$battleship-grey: #888885ff;*/
+/*$atomic-tangerine: #FCA372ff;*/
+
+.appHeader {
+    background-color: #F6F6EFff;
+    margin-left: 5%;
+    width: calc(85% - 10px);
+}

@@ -23,15 +23,17 @@ function App() {
   return (
     <div className="App">
       <h4>HN</h4>
-        <input
-            type="text"
-            value={search}
-            onChange={event => setSearch(event.target.value)}/>
+        <div className="appHeader">
+            <input
+                type="text"
+                value={search}
+                onChange={event => setSearch(event.target.value)}/>
       <ul>
           {articles.map(article => {
               return <Articles data={article}/>
           })}
       </ul>
+        </div>
     </div>
   );
 }
