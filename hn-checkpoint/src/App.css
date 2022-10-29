@@ -74,13 +74,7 @@ ul{
     height: auto;
 }
 
-.appBody {
-    background-color: #F6F6EFff;
-    margin-left: 7.5%;
-    width: 85%;
-    margin-top: 100px;
 
-}
 
 h2 {
     display:block;
@@ -137,4 +131,10 @@ h4 {
 
 
 
+.appBody {
+    background-color: #F6F6EFff;
+    margin-left: 7.5%;
+    width: 85%;
+    margin-top: 100px;
 
+}

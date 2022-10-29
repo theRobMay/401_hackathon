@@ -43,12 +43,21 @@ function App() {
                             <img className ="magnifying" src="https://icones.pro/wp-content/uploads/2021/06/icone-loupe-orange.png" alt="magnifying"></img>
                         </button>
                     </span>
+
+
                         <input
                             className = "searchInput"
                             type="search"
                             placeholder="Search stories by title, url or author"
                             onChange={event => setSearch(event.target.value)}
-                            value= {search}/>
+                            value = {search}></input>
+
+
+
+
+
+
+
                 </div>
             </header>
         </div>
