@@ -45,6 +45,7 @@
     color: black;
     margin-left: 5px;
     width: 95%;
+    cursor: pointer;
 
 
 }
@@ -92,20 +93,19 @@ h2 {
 
 h4 {
     padding-top: 50px;
-
     margin-bottom: 15px;
     line-height: 0;
 }
 
 
 .searchInput {
-    height: 50px;
+    height: 42px;
     font-size: 18px;
     width: 1000em;
     display: flex;
     flex-direction: row;
     padding: 0;
-    margin-right: 300px;
+    margin-right: 45px;
     border: none;
     outline: none;
 
@@ -124,7 +124,7 @@ h4 {
 }
 
 .glass {
-    height: 50px;
+    height: 42px;
     border: none;
     background: white;
 }
@@ -138,3 +138,103 @@ h4 {
     margin-top: 100px;
 
 }
+
+.fa.fa-cog {
+
+    margin-right: 5px;
+    height: 28px;
+    margin-top: 5px;
+    cursor: pointer;
+
+
+}
+
+.settings {
+    font-family: Verdana, Geneva, sans-serif;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+
+
+/*
+ -- all footer css --
+ */
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.Interpunct .about .settingFooter .help .api .hackerNews .fork .coolApps {
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight: bolder;
+
+
+}
+
+.Interpunct {
+    font-size: 18px;
+    background-color: white;
+    border: hidden;
+    cursor: text;
+
+}
+
+
+.about {
+    font-size: 18px;
+    background-color: white;
+    border: hidden;
+    cursor: pointer;
+
+}
+
+.settingFooter {
+    font-size: 18px;
+    background-color: white;
+    border: hidden;
+    cursor: pointer;
+}
+
+.help {
+    font-size: 18px;
+    background-color: white;
+    border: hidden;
+    cursor: pointer;
+}
+
+.api {
+    font-size: 18px;
+    background-color: white;
+    border: hidden;
+    cursor: pointer;
+}
+
+.hackerNews {
+    font-size: 18px;
+    background-color: white;
+    border: hidden;
+    cursor: pointer;
+}
+
+.fork {
+    font-size: 18px;
+    background-color: white;
+    border: hidden;
+    cursor: pointer;
+}
+
+.coolApps {
+    font-size: 18px;
+    background-color: white;
+    border: hidden;
+    cursor: pointer;
+
+
+
+}
+
+
+
+

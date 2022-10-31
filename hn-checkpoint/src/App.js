@@ -44,7 +44,6 @@ function App() {
                         </button>
                     </span>
 
-
                         <input
                             className = "searchInput"
                             type="search"
@@ -52,14 +51,18 @@ function App() {
                             onChange={event => setSearch(event.target.value)}
                             value = {search}></input>
 
-
-
-
-
-
+                    <span>
+                        <img className="fa fa-cog"  src="https://img.icons8.com/external-anggara-basic-outline-anggara-putra/24/000000/external-setting-basic-user-interface-anggara-basic-outline-anggara-putra.png" alt="settings"></img>
+                    </span>
+                    <span>
+                        {/*<button className="settingsButton">*/}
+                            <p className="settings">Settings</p>
+                        {/*</button>*/}
+                    </span>
 
                 </div>
             </header>
+
         </div>
 
         <div className="appBody">
@@ -71,6 +74,25 @@ function App() {
             </ul>
         </div>
       </div>
+        <footer className="footer_container">
+            <ul>
+                <li className ="footer">
+                    <button className="about" >About</button>
+                    <button className="Interpunct"> · </button>
+                    <button className="settingFooter" >Setting</button>
+                    <button className="Interpunct"> · </button>
+                    <button className="help" >Help</button>
+                    <button className="Interpunct"> · </button>
+                    <button className="api" >API Documentation</button>
+                    <button className="Interpunct"> · </button>
+                    <button className="hackerNews" >Hacker News</button>
+                    <button className="Interpunct"> · </button>
+                    <button className="fork" >Fork/Contribute</button>
+                    <button className="Interpunct"> · </button>
+                    <button className="coolApps" >Cool Apps</button>
+                </li>
+            </ul>
+        </footer>
     </div>
   );
 }
