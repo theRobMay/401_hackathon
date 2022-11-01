@@ -3,9 +3,238 @@
 /*$neon-blue: #5468FFff;*/
 /*$battleship-grey: #888885ff;*/
 /*$atomic-tangerine: #FCA372ff;*/
+/*$orange-crayola: #FF732Bff;*/
+/*$peach-crayola: #FFC49Eff;*/
+/*$linen: #FFF1E7ff;*/
+/*$white: #FFFFFFff;*/
+/*$black: #060301ff;*/
 
-.appHeader {
-    background-color: #F6F6EFff;
-    margin-left: 5%;
-    width: calc(85% - 10px);
+* {
+    box-sizing: border-box;
 }
+
+
+
+.default {
+    min-height: 100vh;
+    display: block;
+}
+
+.container {
+    margin-left: 7.5%;
+    width: 85%;
+    display: block;
+    height: 0;
+}
+
+.searchHeader_container {
+    width: 100%!important;
+    margin: 0 auto;
+    display: inline-block;
+
+
+}
+
+.searchHeader_label {
+    position: static;
+    font-size: 19px;
+    height: 53px;
+    line-height: 0;
+    font-weight: normal;
+    font-family: Verdana, Geneva, sans-serif;
+    color: black;
+    margin-left: 5px;
+    width: 95%;
+    cursor: pointer;
+
+
+}
+
+
+
+.searchHeader_search {
+    display: flex;
+    align-items: center;
+    background: #ff742b;
+    height: 60px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    justify-content: space-between;
+
+
+}
+
+
+img {
+    height: 50px;
+
+}
+
+ul{
+    list-style: none;
+    height: auto;
+}
+
+
+
+h2 {
+    display:block;
+    font-size: 19px;
+    line-height: 0;
+    font-weight: normal;
+    font-family: Verdana, Geneva, sans-serif;
+    margin-right: 100px;
+    padding: 1px;
+    color: black;
+    margin-left: 5px;
+    width: 85%;
+    position: relative;
+}
+
+h4 {
+    padding-top: 50px;
+    margin-bottom: 15px;
+    line-height: 0;
+}
+
+
+.searchInput {
+    height: 42px;
+    font-size: 18px;
+    width: 1000em;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin-right: 45px;
+    border: none;
+    outline: none;
+
+}
+
+
+
+.magnifying {
+    color: white;
+    height: 25px;
+    background-color: white;
+    padding: -1px;
+    margin-top:2px;
+    margin-right: 10px;
+
+}
+
+.glass {
+    height: 42px;
+    border: none;
+    background: white;
+}
+
+
+
+.appBody {
+    background-color: #F6F6EFff;
+    margin-left: 7.5%;
+    width: 85%;
+    margin-top: 100px;
+
+}
+
+.fa.fa-cog {
+
+    margin-right: 5px;
+    height: 28px;
+    margin-top: 5px;
+    cursor: pointer;
+
+
+}
+
+.settings {
+    font-family: Verdana, Geneva, sans-serif;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+
+
+/*
+ -- all footer css --
+ */
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.Interpunct .about .settingFooter .help .api .hackerNews .fork .coolApps {
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight: bolder;
+
+
+}
+
+.Interpunct {
+    font-size: 18px;
+    background-color: white;
+    border: hidden;
+    cursor: text;
+
+}
+
+
+.about {
+    font-size: 18px;
+    background-color: white;
+    border: hidden;
+    cursor: pointer;
+
+}
+
+.settingFooter {
+    font-size: 18px;
+    background-color: white;
+    border: hidden;
+    cursor: pointer;
+}
+
+.help {
+    font-size: 18px;
+    background-color: white;
+    border: hidden;
+    cursor: pointer;
+}
+
+.api {
+    font-size: 18px;
+    background-color: white;
+    border: hidden;
+    cursor: pointer;
+}
+
+.hackerNews {
+    font-size: 18px;
+    background-color: white;
+    border: hidden;
+    cursor: pointer;
+}
+
+.fork {
+    font-size: 18px;
+    background-color: white;
+    border: hidden;
+    cursor: pointer;
+}
+
+.coolApps {
+    font-size: 18px;
+    background-color: white;
+    border: hidden;
+    cursor: pointer;
+
+
+
+}
+
+
+
+
