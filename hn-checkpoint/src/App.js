@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import './App.css';
 import Articles from "./articles";
 
+// import Dropdown from 'react-bootstrap/Dropdown';
+
 
 
 
@@ -55,9 +57,7 @@ function App() {
                         <img className="fa fa-cog"  src="https://img.icons8.com/external-anggara-basic-outline-anggara-putra/24/000000/external-setting-basic-user-interface-anggara-basic-outline-anggara-putra.png" alt="settings"></img>
                     </span>
                     <span>
-                        {/*<button className="settingsButton">*/}
                             <p className="settings">Settings</p>
-                        {/*</button>*/}
                     </span>
 
                 </div>
@@ -65,30 +65,38 @@ function App() {
 
         </div>
 
-        <div className="appBody">
 
-            <ul>
+        <div className="appBody">
+            <div className = "dropDownMenuContainer">
+                <span className="dropDownSearch">
+                    Search
+                    {/*This is where the dropdowns piece goes, i need help with this */}
+                </span>
+            </div>
+
+            <ul className="articles">
             {articles.map(article => {
               return <Articles data={article}/>
             })}
             </ul>
         </div>
       </div>
-        <footer className="footer_container">
+
+      <footer className="footer_container">
             <ul>
                 <li className ="footer">
                     <button className="about" >About</button>
-                    <button className="Interpunct"> · </button>
+                        <button className="Interpunct"> · </button>
                     <button className="settingFooter" >Setting</button>
-                    <button className="Interpunct"> · </button>
+                        <button className="Interpunct"> · </button>
                     <button className="help" >Help</button>
-                    <button className="Interpunct"> · </button>
+                        <button className="Interpunct"> · </button>
                     <button className="api" >API Documentation</button>
-                    <button className="Interpunct"> · </button>
+                        <button className="Interpunct"> · </button>
                     <button className="hackerNews" >Hacker News</button>
-                    <button className="Interpunct"> · </button>
+                        <button className="Interpunct"> · </button>
                     <button className="fork" >Fork/Contribute</button>
-                    <button className="Interpunct"> · </button>
+                        <button className="Interpunct"> · </button>
                     <button className="coolApps" >Cool Apps</button>
                 </li>
             </ul>

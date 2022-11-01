@@ -131,13 +131,7 @@ h4 {
 
 
 
-.appBody {
-    background-color: #F6F6EFff;
-    margin-left: 7.5%;
-    width: 85%;
-    margin-top: 100px;
 
-}
 
 .fa.fa-cog {
 
@@ -155,7 +149,35 @@ h4 {
     cursor: pointer;
 }
 
+.appBody {
+    background-color: #F6F6EFff;
+    margin-left: 7.5%;
+    width: 85%;
+    /*margin-top: 50px;*/
+    padding-bottom: 10px;
 
+
+}
+.dropDownMenuContainer {
+    background-color: #F6F6EFff;
+    width: 100% !important;
+    padding-top: 65px;
+
+    height: 35px;
+}
+
+.dropDownSearch {
+    font-size: 12px;
+    font-family: Verdana, Geneva, sans-serif;
+    color: black;
+    margin-left: 10px;
+
+}
+
+.articles {
+    margin-bottom: 15px;
+
+}
 
 /*
  -- all footer css --
