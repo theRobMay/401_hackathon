@@ -1,14 +1,14 @@
-import React, {useState} from "react";
+import React from "react";
 
 export default function Articles(props){
-    const [isToggled, setToggle] = useState(false);
     return(
       <li>
           <h4>{props.data.title}</h4>
-          <p>Author: {props.data.author}</p>
+          <a href={props.data.url} target="_blank" rel="noopener noreferrer">{props.data.url}</a>
           <p>Points: {props.data.points}</p>
-          {isToggled && <p>Check out <a href={props.data.url} target="_blank" rel="noopener noreferrer">the Article here</a>.</p>}
-          <button onClick={() => setToggle(!isToggled)}>Link is here</button>
+          <p>Author: {props.data.author}</p>
+
+
       </li>
     );
 };
