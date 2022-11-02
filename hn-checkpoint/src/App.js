@@ -36,10 +36,10 @@ function App() {
                             <img src="https://d1sz9gun5ag95e.cloudfront.net/packs/media/images/logo-hn-search-a822432b.png" alt="HackerNewsLogo"></img>
                         </a>
                     </span>
-                        <div className="searchHeader_label">
+                        <span className="searchHeader_label">
                             <h2>Search</h2>
                             <h2>Hacker News</h2>
-                        </div>
+                        </span>
                     <span>
                         <button className ="glass">
                             <img className ="magnifying" src="https://icones.pro/wp-content/uploads/2021/06/icone-loupe-orange.png" alt="magnifying"></img>
@@ -86,17 +86,17 @@ function App() {
             <ul>
                 <li className ="footer">
                     <button className="about" >About</button>
-                        <button className="Interpunct"> · </button>
+                        <li className="Interpunct"> · </li>
                     <button className="settingFooter" >Setting</button>
-                        <button className="Interpunct"> · </button>
+                        <li className="Interpunct"> · </li>
                     <button className="help" >Help</button>
-                        <button className="Interpunct"> · </button>
+                        <li className="Interpunct"> · </li>
                     <button className="api" >API Documentation</button>
-                        <button className="Interpunct"> · </button>
+                        <li className="Interpunct"> · </li>
                     <button className="hackerNews" >Hacker News</button>
-                        <button className="Interpunct"> · </button>
+                        <li className="Interpunct"> · </li>
                     <button className="fork" >Fork/Contribute</button>
-                        <button className="Interpunct"> · </button>
+                        <li className="Interpunct"> · </li>
                     <button className="coolApps" >Cool Apps</button>
                 </li>
             </ul>
