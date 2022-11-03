@@ -46,12 +46,7 @@ function App() {
                         </button>
                     </span>
 
-                        <input
-                            className = "searchInput"
-                            type="search"
-                            placeholder="Search stories by title, url or author"
-                            onChange={event => setSearch(event.target.value)}
-                            value = {search}></input>
+                        <input className = "searchInput" type="search" placeholder="Search stories by title, url or author" onChange={event => setSearch(event.target.value)} value = {search}></input>
 
                     <span>
                         <img className="fa fa-cog"  src="https://img.icons8.com/external-anggara-basic-outline-anggara-putra/24/000000/external-setting-basic-user-interface-anggara-basic-outline-anggara-putra.png" alt="settings"></img>
