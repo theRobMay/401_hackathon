@@ -65,7 +65,7 @@ function App() {
             <div className = "dropDownMenuContainer">
                 <span className="dropDownSearch">
                     Search
-                    {/*This is where the dropdowns piece goes, i need help with this */}
+
                 </span>
             </div>
 
