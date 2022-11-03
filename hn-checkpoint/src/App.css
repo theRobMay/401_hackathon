@@ -13,6 +13,10 @@
     box-sizing: border-box;
 }
 
+.body {
+    width: 100%;
+    margin: 0;
+}
 
 
 .default {
@@ -33,12 +37,13 @@
     display: inline-block;
 
 
+
 }
 
 .searchHeader_label {
     position: static;
     font-size: 19px;
-    height: 53px;
+    height: 55px;
     line-height: 0;
     font-weight: normal;
     font-family: Verdana, Geneva, sans-serif;
@@ -89,12 +94,15 @@ h2 {
     margin-left: 5px;
     width: 85%;
     position: relative;
+
 }
 
 h4 {
     padding-top: 50px;
     margin-bottom: 15px;
     line-height: 0;
+    flex-wrap: wrap;
+    font-size: 14px;
 }
 
 
@@ -127,24 +135,20 @@ h4 {
     height: 42px;
     border: none;
     background: white;
+    cursor: text;
 }
 
 
 
-.appBody {
-    background-color: #F6F6EFff;
-    margin-left: 7.5%;
-    width: 85%;
-    margin-top: 100px;
 
-}
 
 .fa.fa-cog {
 
-    margin-right: 5px;
-    height: 28px;
+    margin-right: 6px;
+    height: 26px;
     margin-top: 5px;
     cursor: pointer;
+    outline-color: #ff742b;
 
 
 }
@@ -153,17 +157,53 @@ h4 {
     font-family: Verdana, Geneva, sans-serif;
     margin-right: 5px;
     cursor: pointer;
+    font-size: 16px;
 }
 
+.appBody {
+    background-color: #F6F6EFff;
+    margin-left: 7.5%;
+    width: 85%;
+    /*margin-top: 50px;*/
+    padding-bottom: 10px;
+    flex-wrap: wrap;
 
 
-/*
- -- all footer css --
- */
+}
+.dropDownMenuContainer {
+    background-color: #F6F6EFff;
+    width: 100% !important;
+    padding-top: 65px;
+
+    height: 35px;
+}
+
+.dropDownSearch {
+    font-size: 12px;
+    font-family: Verdana, Geneva, sans-serif;
+    color: black;
+    margin-left: 10px;
+
+}
+
+.articles {
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+
+}
+
+p {
+    font-size: 15px;
+}
+
+/* Footer */
+
 .footer {
     text-align: center;
     margin-top: 40px;
     margin-bottom: 40px;
+
+
 }
 
 .Interpunct .about .settingFooter .help .api .hackerNews .fork .coolApps {
@@ -178,6 +218,9 @@ h4 {
     background-color: white;
     border: hidden;
     cursor: text;
+    display: inline-block;
+    list-style: disc;
+    text-align: center;
 
 }
 
@@ -187,6 +230,10 @@ h4 {
     background-color: white;
     border: hidden;
     cursor: pointer;
+    display: inline;
+
+
+
 
 }
 
@@ -195,6 +242,8 @@ h4 {
     background-color: white;
     border: hidden;
     cursor: pointer;
+    display: inline-list-item;
+
 }
 
 .help {
@@ -238,3 +287,72 @@ h4 {
 
 
 
+ /*Media Queries */
+
+@media only screen and (max-width: 740px){
+
+    .searchHeader_container {
+        width: 100%;
+
+    }
+    .searchHeader_label {
+        display: none;
+
+    }
+
+    .searchInput {
+        height: 34px;
+    }
+
+    .settings {
+        display: none;
+    }
+
+    .glass {
+        margin-left: 25px;
+        height: 34px;
+    }
+
+    .magnifying {
+        height: 20px;
+    }
+
+    .fa.fa-cog {
+        margin-right: 13px;
+    }
+
+    .appBody {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .searchHeader_search {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+
+}
+
+@media only screen and (max-width: 1200px){
+
+    .appBody {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .searchHeader_search {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+        margin-left: 0;
+    }
+}
