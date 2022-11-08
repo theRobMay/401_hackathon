@@ -10,6 +10,8 @@ import Select from '@mui/material/Select';
 
 
 
+
+
 function App() {
   const [articles, setArticles] = useState([]);
   const [search, setSearch] = useState('');
@@ -39,30 +41,23 @@ function App() {
                             <img src="https://d1sz9gun5ag95e.cloudfront.net/packs/media/images/logo-hn-search-a822432b.png" alt="HackerNewsLogo"></img>
                         </a>
                     </span>
-                        <div className="searchHeader_label">
+                        <span className="searchHeader_label">
                             <h2>Search</h2>
                             <h2>Hacker News</h2>
-                        </div>
+                        </span>
                     <span>
                         <button className ="glass">
                             <img className ="magnifying" src="https://icones.pro/wp-content/uploads/2021/06/icone-loupe-orange.png" alt="magnifying"></img>
                         </button>
                     </span>
 
-                        <input
-                            className = "searchInput"
-                            type="search"
-                            placeholder="Search stories by title, url or author"
-                            onChange={event => setSearch(event.target.value)}
-                            value = {search}></input>
+                        <input className = "searchInput" type="search" placeholder="Search stories by title, url or author" onChange={event => setSearch(event.target.value)} value = {search}></input>
 
                     <span>
                         <img className="fa fa-cog"  src="https://img.icons8.com/external-anggara-basic-outline-anggara-putra/24/000000/external-setting-basic-user-interface-anggara-basic-outline-anggara-putra.png" alt="settings"></img>
                     </span>
                     <span>
-                        {/*<button className="settingsButton">*/}
                             <p className="settings">Settings</p>
-                        {/*</button>*/}
                     </span>
 
                 </div>
@@ -70,7 +65,9 @@ function App() {
 
         </div>
 
+
         <div className="appBody">
+
             <p className={"filterBar"}>Search<Box sx={{ minWidth: 120 }}>
                 <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
                     <InputLabel id="demo-simple-select-label">Stories</InputLabel>
@@ -123,27 +120,38 @@ function App() {
                 </FormControl>
             </Box></p>
             <ul>
+
+            <div className = "dropDownMenuContainer">
+                <span className="dropDownSearch">
+                    Search
+
+                </span>
+            </div>
+
+            <ul className="articles">
+
             {articles.map(article => {
               return <Articles data={article}/>
             })}
             </ul>
         </div>
       </div>
-        <footer className="footer_container">
+
+      <footer className="footer_container">
             <ul>
                 <li className ="footer">
                     <button className="about" >About</button>
-                    <button className="Interpunct"> · </button>
+                        <li className="Interpunct"> · </li>
                     <button className="settingFooter" >Setting</button>
-                    <button className="Interpunct"> · </button>
+                        <li className="Interpunct"> · </li>
                     <button className="help" >Help</button>
-                    <button className="Interpunct"> · </button>
+                        <li className="Interpunct"> · </li>
                     <button className="api" >API Documentation</button>
-                    <button className="Interpunct"> · </button>
+                        <li className="Interpunct"> · </li>
                     <button className="hackerNews" >Hacker News</button>
-                    <button className="Interpunct"> · </button>
+                        <li className="Interpunct"> · </li>
                     <button className="fork" >Fork/Contribute</button>
-                    <button className="Interpunct"> · </button>
+                        <li className="Interpunct"> · </li>
                     <button className="coolApps" >Cool Apps</button>
                 </li>
             </ul>
