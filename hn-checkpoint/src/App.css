@@ -58,6 +58,12 @@ a {
     color: gray;
 }
 
+.filterBar {
+    display: flex;
+    margin-top: 7vh;
+    margin-bottom: 0;
+}
+
 
 .searchHeader_search {
     display: flex;
