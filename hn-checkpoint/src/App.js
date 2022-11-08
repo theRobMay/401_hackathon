@@ -11,7 +11,6 @@ import Select from '@mui/material/Select';
 
 
 
-
 function App() {
     const [articles, setArticles] = useState([]);
     const [search, setSearch] = useState('');
@@ -66,10 +65,6 @@ function App() {
                 </div>
 
 
-
-                <div className="appBody">
-                    <div className = "dropDownMenuContainer">
-
         <div className="appBody">
 
             <p className={"filterBar"}>Search<Box sx={{ minWidth: 120 }}>
@@ -123,12 +118,10 @@ function App() {
                     </Select>
                 </FormControl>
             </Box></p>
-            <ul>
 
             <div className = "dropDownMenuContainer">
 
                 <span className="dropDownSearch">
-                    Search
 
                 </span>
                     </div>
@@ -143,19 +136,7 @@ function App() {
             </div>
 
 
-            <footer className="footer_container">
-                <ul>
-                    <li className ="footer">
-                        <button className="about" >About</button>
 
-            <ul className="articles">
-
-            {articles.map(article => {
-              return <Articles data={article}/>
-            })}
-            </ul>
-        </div>
-      </div>
 
       <footer className="footer_container">
             <ul>
@@ -178,7 +159,8 @@ function App() {
                 </ul>
             </footer>
         </div>
-    );
+
+            );
 }
 
 export default App;
