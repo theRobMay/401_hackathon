@@ -1,12 +1,12 @@
 import React from "react";
+import "./App.css";
 
 export default function Articles(props){
     return(
-      <li>
-          <h4>{props.data.title}</h4>
-          <a href={props.data.url} target="_blank" rel="noopener noreferrer">{props.data.url}</a>
-          <p>Points: {props.data.points}</p>
-          <p>Author: {props.data.author}</p>
+      <li className={"articleList"}>
+          <h4 className={"articleTitle"}>{props.data.title} <a href={props.data.url} target="_blank" rel="noopener noreferrer">{props.data.url}</a>
+          </h4>
+          <p className={"articlePoints"}>Points: {props.data.points} | Author: {props.data.author}</p>
 
 
       </li>
