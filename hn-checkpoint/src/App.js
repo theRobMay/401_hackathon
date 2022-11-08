@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from "react";
 import './App.css';
 import Articles from "./articles";
+import Box from '@mui/material/Box';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
 
 
 
@@ -61,8 +66,67 @@ function App() {
                 </div>
 
 
+
                 <div className="appBody">
                     <div className = "dropDownMenuContainer">
+
+        <div className="appBody">
+
+            <p className={"filterBar"}>Search<Box sx={{ minWidth: 120 }}>
+                <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
+                    <InputLabel id="demo-simple-select-label">Stories</InputLabel>
+                    <Select
+                        labelId="demo-simple-select-label"
+                        id="demo-simple-select"
+                        label="Stories"
+                    >
+                        <MenuItem value="">
+                            <em>None</em>
+                        </MenuItem>
+                        <MenuItem value={10}>Ten</MenuItem>
+                        <MenuItem value={20}>Twenty</MenuItem>
+                        <MenuItem value={30}>Thirty</MenuItem>
+                    </Select>
+                </FormControl>
+            </Box> by
+            <Box sx={{ minWidth: 120 }}>
+                <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
+                    <InputLabel id="demo-simple-select-label">Popularity</InputLabel>
+                    <Select
+                        labelId="demo-simple-select-label"
+                        id="demo-simple-select"
+                        label="popularity"
+                    >
+                        <MenuItem value="">
+                            <em>None</em>
+                        </MenuItem>
+                        <MenuItem value={10}>Ten</MenuItem>
+                        <MenuItem value={20}>Twenty</MenuItem>
+                        <MenuItem value={30}>Thirty</MenuItem>
+                    </Select>
+                </FormControl>
+            </Box> for
+            <Box sx={{ minWidth: 120 }}>
+                <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
+                    <InputLabel id="demo-simple-select-label">All Time</InputLabel>
+                    <Select
+                        labelId="demo-simple-select-label"
+                        id="demo-simple-select"
+                        label="Age"
+                    >
+                        <MenuItem value="">
+                            <em>None</em>
+                        </MenuItem>
+                        <MenuItem value={10}>Ten</MenuItem>
+                        <MenuItem value={20}>Twenty</MenuItem>
+                        <MenuItem value={30}>Thirty</MenuItem>
+                    </Select>
+                </FormControl>
+            </Box></p>
+            <ul>
+
+            <div className = "dropDownMenuContainer">
+
                 <span className="dropDownSearch">
                     Search
 
@@ -78,10 +142,26 @@ function App() {
                 </div>
             </div>
 
+
             <footer className="footer_container">
                 <ul>
                     <li className ="footer">
                         <button className="about" >About</button>
+
+            <ul className="articles">
+
+            {articles.map(article => {
+              return <Articles data={article}/>
+            })}
+            </ul>
+        </div>
+      </div>
+
+      <footer className="footer_container">
+            <ul>
+                <li className ="footer">
+                    <button className="about" >About</button>
+
                         <li className="Interpunct"> · </li>
                         <button className="settingFooter" >Setting</button>
                         <li className="Interpunct"> · </li>

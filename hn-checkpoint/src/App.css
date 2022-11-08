@@ -54,7 +54,15 @@
 
 
 }
+a {
+    color: gray;
+}
 
+.filterBar {
+    display: flex;
+    margin-top: 7vh;
+    margin-bottom: 0;
+}
 
 
 .searchHeader_search {
@@ -100,7 +108,6 @@ h2 {
 h4 {
     padding-top: 50px;
     margin-bottom: 15px;
-    line-height: 0;
     flex-wrap: wrap;
     font-size: 14px;
 }
@@ -176,6 +183,7 @@ h4 {
     padding-top: 65px;
 
     height: 35px;
+
 }
 
 .dropDownSearch {
