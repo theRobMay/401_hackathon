@@ -33,36 +33,33 @@ function App() {
         <div className="App">
             <div className="default">
                 <div className="container">
-                       
-                    
                     <header className="searchHeader_container">
-                            <div className="searchHeader_search">
-                        <span className="searchHeader_logo">
-                            <a href="https://news.ycombinator.com">
-                                <img src="https://d1sz9gun5ag95e.cloudfront.net/packs/media/images/logo-hn-search-a822432b.png" alt="HackerNewsLogo"></img>
-                            </a>
+                        <div className="searchHeader_search">
+                    <span className="searchHeader_logo">
+                        <a href="https://news.ycombinator.com">
+                            <img className="hackerNewsImage" src="https://d1sz9gun5ag95e.cloudfront.net/packs/media/images/logo-hn-search-a822432b.png" alt="HackerNewsLogo"></img>
+                        </a>
+                    </span>
+                            <span className="searchHeader_label">
+                            <h2>Search</h2>
+                            <h2>Hacker News</h2>
                         </span>
-                                <span className="searchHeader_label">
-                                <h2>Search</h2>
-                                <h2>Hacker News</h2>
-                            </span>
-                                <span>
-                            <button className ="glass">
-                                <img className ="magnifying" src="https://icones.pro/wp-content/uploads/2021/06/icone-loupe-orange.png" alt="magnifying"></img>
-                            </button>
-                        </span>
+                            <span>
+                        <button className ="glass">
+                            <img className ="magnifying" src="https://icones.pro/wp-content/uploads/2021/06/icone-loupe-orange.png" alt="magnifying"></img>
+                        </button>
+                    </span>
 
-                                <input className = "searchInput" type="search" placeholder="Search stories by title, url or author" onChange={event => setSearch(event.target.value)} value = {search}></input>
+                            <input className = "searchInput" type="search" placeholder="Search stories by title, url or author" onChange={event => setSearch(event.target.value)} value = {search}></input>
 
-                                <span>
-                            <img className="fa fa-cog"  src="https://img.icons8.com/external-anggara-basic-outline-anggara-putra/24/000000/external-setting-basic-user-interface-anggara-basic-outline-anggara-putra.png" alt="settings"></img>
-                        </span>
-                                <span>
-                                <p className="settings">Settings</p>
-                        </span>
+                            <span>
+                        <img className="fa fa-cog"  src="https://img.icons8.com/external-anggara-basic-outline-anggara-putra/24/000000/external-setting-basic-user-interface-anggara-basic-outline-anggara-putra.png" alt="settings"></img>
+                    </span>
+                            <span>
+                            <p className="settings">Settings</p>
+                    </span>
 
-                            </div>
-                            
+                        </div>
                     </header>
 
                 </div>
@@ -78,12 +75,12 @@ function App() {
                         id="demo-simple-select"
                         label="Stories"
                     >
-                        <MenuItem value="">
-                            <em>None</em>
-                        </MenuItem>
-                        <MenuItem value={10}>Ten</MenuItem>
-                        <MenuItem value={20}>Twenty</MenuItem>
-                        <MenuItem value={30}>Thirty</MenuItem>
+                        {/*<MenuItem value="">*/}
+                        {/*    <em>None</em>*/}
+                        {/*</MenuItem>*/}
+                        <MenuItem value={10}>All</MenuItem>
+                        <MenuItem value={20}>Stories</MenuItem>
+                        <MenuItem value={30}>Comments</MenuItem>
                     </Select>
                 </FormControl>
             </Box> by
@@ -95,12 +92,12 @@ function App() {
                         id="demo-simple-select"
                         label="popularity"
                     >
-                        <MenuItem value="">
-                            <em>None</em>
-                        </MenuItem>
-                        <MenuItem value={10}>Ten</MenuItem>
-                        <MenuItem value={20}>Twenty</MenuItem>
-                        <MenuItem value={30}>Thirty</MenuItem>
+                        {/*<MenuItem value="">*/}
+                        {/*    <em>None</em>*/}
+                        {/*</MenuItem>*/}
+                        <MenuItem value={10}>Popularity</MenuItem>
+                        <MenuItem value={20}>Date</MenuItem>
+
                     </Select>
                 </FormControl>
             </Box> for
@@ -112,28 +109,29 @@ function App() {
                         id="demo-simple-select"
                         label="Age"
                     >
-                        <MenuItem value="">
-                            <em>None</em>
-                        </MenuItem>
-                        <MenuItem value={10}>Ten</MenuItem>
-                        <MenuItem value={20}>Twenty</MenuItem>
-                        <MenuItem value={30}>Thirty</MenuItem>
+                        {/*<MenuItem value="">*/}
+                        {/*    <em>None</em>*/}
+                        {/*</MenuItem>*/}
+                        <MenuItem value={10}>All time</MenuItem>
+                        <MenuItem value={20}>Last 24h</MenuItem>
+                        <MenuItem value={30}>Past Week</MenuItem>
+                        <MenuItem value={30}>Past Month</MenuItem>
+                        <MenuItem value={30}>Past Year</MenuItem>
+                        <MenuItem value={30}>Custom range</MenuItem>
                     </Select>
                 </FormControl>
             </Box>
-            <div className="shareResults">
-            <p>949 results (0.001 seconds)</p>
-            <img src="https://img.icons8.com/material-outlined/24/000000/share.png" alt="share"/>
-            </div>
+                <div className="shareResults">
+                <p>949 results (0.001 seconds)</p>
+                <img src="https://img.icons8.com/material-outlined/24/000000/share.png" alt="share"/>
+                </div>
             </p>
+            {/*<div className = "dropDownMenuContainer">*/}
 
+            {/*    <span className="dropDownSearch">*/}
 
-            <div className = "dropDownMenuContainer">
-
-                <span className="dropDownSearch">
-
-                </span>
-                    </div>
+            {/*    </span>*/}
+            {/*        </div>*/}
 
                     <ul className="articles">
                         {articles.map(article => {
@@ -141,10 +139,10 @@ function App() {
                         })
                         }
                     </ul>
+                    
                 </div>
+                
             </div>
-
-
             <div className="squares">
                 <square>1</square>
                 <square>2</square>
@@ -154,6 +152,8 @@ function App() {
                 <square>6</square>
                 <square>></square>
             </div>
+
+
 
 
       <footer className="footer_container">
