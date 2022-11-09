@@ -58,10 +58,24 @@ a {
     color: gray;
 }
 
+
 .filterBar {
     display: flex;
-    margin-top: 7vh;
+    margin-top: 60px;
+    padding-top: 15px;
+    margin-left: 4px;
     margin-bottom: 0;
+
+
+
+}
+
+.MuiBox-root {
+    height: 45px;
+}
+
+.css-ece9u5 {
+    height: 45px;
 }
 
 
@@ -78,7 +92,7 @@ a {
 }
 
 
-img {
+.hackerNewsImage {
     height: 50px;
 
 }
@@ -106,7 +120,7 @@ h2 {
 }
 
 h4 {
-    padding-top: 50px;
+    /*padding-top: 50px;*/
     margin-bottom: 15px;
     flex-wrap: wrap;
     font-size: 14px;
@@ -171,17 +185,16 @@ h4 {
     background-color: #F6F6EFff;
     margin-left: 7.5%;
     width: 85%;
-    /*margin-top: 50px;*/
     padding-bottom: 10px;
     flex-wrap: wrap;
 
 
 }
+
+
 .dropDownMenuContainer {
     background-color: #F6F6EFff;
     width: 100% !important;
-    padding-top: 65px;
-
     height: 35px;
 
 }
@@ -195,7 +208,7 @@ h4 {
 }
 
 .articles {
-    margin-bottom: 15px;
+    /*margin-bottom: 15px;*/
     flex-wrap: wrap;
 
 }

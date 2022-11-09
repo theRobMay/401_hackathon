@@ -37,7 +37,7 @@ function App() {
                         <div className="searchHeader_search">
                     <span className="searchHeader_logo">
                         <a href="https://news.ycombinator.com">
-                            <img src="https://d1sz9gun5ag95e.cloudfront.net/packs/media/images/logo-hn-search-a822432b.png" alt="HackerNewsLogo"></img>
+                            <img className="hackerNewsImage" src="https://d1sz9gun5ag95e.cloudfront.net/packs/media/images/logo-hn-search-a822432b.png" alt="HackerNewsLogo"></img>
                         </a>
                     </span>
                             <span className="searchHeader_label">
@@ -75,12 +75,12 @@ function App() {
                         id="demo-simple-select"
                         label="Stories"
                     >
-                        <MenuItem value="">
-                            <em>None</em>
-                        </MenuItem>
-                        <MenuItem value={10}>Ten</MenuItem>
-                        <MenuItem value={20}>Twenty</MenuItem>
-                        <MenuItem value={30}>Thirty</MenuItem>
+                        {/*<MenuItem value="">*/}
+                        {/*    <em>None</em>*/}
+                        {/*</MenuItem>*/}
+                        <MenuItem value={10}>All</MenuItem>
+                        <MenuItem value={20}>Stories</MenuItem>
+                        <MenuItem value={30}>Comments</MenuItem>
                     </Select>
                 </FormControl>
             </Box> by
@@ -92,12 +92,12 @@ function App() {
                         id="demo-simple-select"
                         label="popularity"
                     >
-                        <MenuItem value="">
-                            <em>None</em>
-                        </MenuItem>
-                        <MenuItem value={10}>Ten</MenuItem>
-                        <MenuItem value={20}>Twenty</MenuItem>
-                        <MenuItem value={30}>Thirty</MenuItem>
+                        {/*<MenuItem value="">*/}
+                        {/*    <em>None</em>*/}
+                        {/*</MenuItem>*/}
+                        <MenuItem value={10}>Popularity</MenuItem>
+                        <MenuItem value={20}>Date</MenuItem>
+
                     </Select>
                 </FormControl>
             </Box> for
@@ -109,22 +109,25 @@ function App() {
                         id="demo-simple-select"
                         label="Age"
                     >
-                        <MenuItem value="">
-                            <em>None</em>
-                        </MenuItem>
-                        <MenuItem value={10}>Ten</MenuItem>
-                        <MenuItem value={20}>Twenty</MenuItem>
-                        <MenuItem value={30}>Thirty</MenuItem>
+                        {/*<MenuItem value="">*/}
+                        {/*    <em>None</em>*/}
+                        {/*</MenuItem>*/}
+                        <MenuItem value={10}>All time</MenuItem>
+                        <MenuItem value={20}>Last 24h</MenuItem>
+                        <MenuItem value={30}>Past Week</MenuItem>
+                        <MenuItem value={30}>Past Month</MenuItem>
+                        <MenuItem value={30}>Past Year</MenuItem>
+                        <MenuItem value={30}>Custom range</MenuItem>
                     </Select>
                 </FormControl>
             </Box></p>
 
-            <div className = "dropDownMenuContainer">
+            {/*<div className = "dropDownMenuContainer">*/}
 
-                <span className="dropDownSearch">
+            {/*    <span className="dropDownSearch">*/}
 
-                </span>
-                    </div>
+            {/*    </span>*/}
+            {/*        </div>*/}
 
                     <ul className="articles">
                         {articles.map(article => {
