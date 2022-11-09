@@ -58,10 +58,24 @@ a {
     color: gray;
 }
 
+
 .filterBar {
     display: flex;
-    margin-top: 7vh;
+    margin-top: 60px;
+    padding-top: 15px;
+    margin-left: 4px;
     margin-bottom: 0;
+
+
+
+}
+
+.MuiBox-root {
+    height: 45px;
+}
+
+.css-ece9u5 {
+    height: 45px;
 }
 
 
@@ -73,22 +87,12 @@ a {
     padding-top: 4px;
     padding-bottom: 4px;
     justify-content: space-between;
-}
 
-.shareResults{
-    font-size: 10px;
-    display: flex;
-    margin-left: 800px;
-}
 
-.shareResults img{
-    margin: 16px 0 0 5px;
-    height: 20px;
-    opacity: 50%;
 }
 
 
-img {
+.hackerNewsImage {
     height: 50px;
 
 }
@@ -116,7 +120,7 @@ h2 {
 }
 
 h4 {
-    padding-top: 50px;
+    /*padding-top: 50px;*/
     margin-bottom: 15px;
     flex-wrap: wrap;
     font-size: 14px;
@@ -181,17 +185,16 @@ h4 {
     background-color: #F6F6EFff;
     margin-left: 7.5%;
     width: 85%;
-    /*margin-top: 50px;*/
     padding-bottom: 10px;
     flex-wrap: wrap;
 
 
 }
+
+
 .dropDownMenuContainer {
     background-color: #F6F6EFff;
     width: 100% !important;
-    padding-top: 65px;
-
     height: 35px;
 
 }
@@ -205,7 +208,7 @@ h4 {
 }
 
 .articles {
-    margin-bottom: 15px;
+    /*margin-bottom: 15px;*/
     flex-wrap: wrap;
 
 }
@@ -297,6 +300,9 @@ p {
     background-color: white;
     border: hidden;
     cursor: pointer;
+
+
+
 }
 
 .squares {
@@ -310,7 +316,17 @@ p {
     margin: 20px 0 10px 0;
 }
 
+.shareResults{
+    font-size: 10px;
+    display: flex;
+    margin-left: 700px;
+}
 
+.shareResults img{
+    margin: 16px 0 0 5px;
+    height: 20px;
+    opacity: 50%;
+}
 
 
 /*Media Queries */
@@ -363,7 +379,28 @@ p {
         margin-right: 0;
     }
 
-
+    .squares {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    .squares square {
+        outline: 2px rgb(190, 190, 190) solid;
+        padding:0 10px 2px 10px;
+        margin: 20px 0 10px 0;
+    }
+    
+    .shareResults{
+        font-size: 10px;
+        display: flex;
+        margin-left: 31px;
+    }
+    
+    .shareResults img{
+        margin: 16px 0 0 5px;
+        height: 20px;
+        opacity: 50%;
+    }
 }
 
 @media only screen and (max-width: 1200px){
@@ -380,5 +417,17 @@ p {
     .container {
         width: 100%;
         margin-left: 0;
+    }
+
+    .shareResults{
+        font-size: 10px;
+        display: flex;
+        margin-left: 485px;
+    }
+    
+    .shareResults img{
+        margin: 16px 0 0 5px;
+        height: 20px;
+        opacity: 50%;
     }
 }
