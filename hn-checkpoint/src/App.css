@@ -73,8 +73,18 @@ a {
     padding-top: 4px;
     padding-bottom: 4px;
     justify-content: space-between;
+}
 
+.shareResults{
+    font-size: 10px;
+    display: flex;
+    margin-left: 800px;
+}
 
+.shareResults img{
+    margin: 16px 0 0 5px;
+    height: 20px;
+    opacity: 50%;
 }
 
 
@@ -287,9 +297,17 @@ p {
     background-color: white;
     border: hidden;
     cursor: pointer;
+}
 
-
-
+.squares {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.squares square {
+    outline: 2px rgb(190, 190, 190) solid;
+    padding:0 10px 2px 10px;
+    margin: 20px 0 10px 0;
 }
 
 

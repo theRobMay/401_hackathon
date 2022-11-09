@@ -33,33 +33,36 @@ function App() {
         <div className="App">
             <div className="default">
                 <div className="container">
+                       
+                    
                     <header className="searchHeader_container">
-                        <div className="searchHeader_search">
-                    <span className="searchHeader_logo">
-                        <a href="https://news.ycombinator.com">
-                            <img src="https://d1sz9gun5ag95e.cloudfront.net/packs/media/images/logo-hn-search-a822432b.png" alt="HackerNewsLogo"></img>
-                        </a>
-                    </span>
-                            <span className="searchHeader_label">
-                            <h2>Search</h2>
-                            <h2>Hacker News</h2>
+                            <div className="searchHeader_search">
+                        <span className="searchHeader_logo">
+                            <a href="https://news.ycombinator.com">
+                                <img src="https://d1sz9gun5ag95e.cloudfront.net/packs/media/images/logo-hn-search-a822432b.png" alt="HackerNewsLogo"></img>
+                            </a>
                         </span>
-                            <span>
-                        <button className ="glass">
-                            <img className ="magnifying" src="https://icones.pro/wp-content/uploads/2021/06/icone-loupe-orange.png" alt="magnifying"></img>
-                        </button>
-                    </span>
+                                <span className="searchHeader_label">
+                                <h2>Search</h2>
+                                <h2>Hacker News</h2>
+                            </span>
+                                <span>
+                            <button className ="glass">
+                                <img className ="magnifying" src="https://icones.pro/wp-content/uploads/2021/06/icone-loupe-orange.png" alt="magnifying"></img>
+                            </button>
+                        </span>
 
-                            <input className = "searchInput" type="search" placeholder="Search stories by title, url or author" onChange={event => setSearch(event.target.value)} value = {search}></input>
+                                <input className = "searchInput" type="search" placeholder="Search stories by title, url or author" onChange={event => setSearch(event.target.value)} value = {search}></input>
 
-                            <span>
-                        <img className="fa fa-cog"  src="https://img.icons8.com/external-anggara-basic-outline-anggara-putra/24/000000/external-setting-basic-user-interface-anggara-basic-outline-anggara-putra.png" alt="settings"></img>
-                    </span>
-                            <span>
-                            <p className="settings">Settings</p>
-                    </span>
+                                <span>
+                            <img className="fa fa-cog"  src="https://img.icons8.com/external-anggara-basic-outline-anggara-putra/24/000000/external-setting-basic-user-interface-anggara-basic-outline-anggara-putra.png" alt="settings"></img>
+                        </span>
+                                <span>
+                                <p className="settings">Settings</p>
+                        </span>
 
-                        </div>
+                            </div>
+                            
                     </header>
 
                 </div>
@@ -117,7 +120,13 @@ function App() {
                         <MenuItem value={30}>Thirty</MenuItem>
                     </Select>
                 </FormControl>
-            </Box></p>
+            </Box>
+            <div className="shareResults">
+            <p>949 results (0.001 seconds)</p>
+            <img src="https://img.icons8.com/material-outlined/24/000000/share.png" alt="share"/>
+            </div>
+            </p>
+
 
             <div className = "dropDownMenuContainer">
 
@@ -136,6 +145,15 @@ function App() {
             </div>
 
 
+            <div className="squares">
+                <square>1</square>
+                <square>2</square>
+                <square>3</square>
+                <square>4</square>
+                <square>5</square>
+                <square>6</square>
+                <square>></square>
+            </div>
 
 
       <footer className="footer_container">
