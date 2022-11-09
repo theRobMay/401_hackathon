@@ -67,8 +67,8 @@ function App() {
 
         <div className="appBody">
 
-            <p className={"filterBar"}>Search<Box sx={{ minWidth: 120 }}>
-                <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
+            <p className={"filterBar"}>Search<Box sx={{ minWidth: 100 }}>
+                <FormControl className={"filterBox"} sx={{ m: 1, minWidth: 100, marginRight: 25 }} size="small">
                     <InputLabel id="demo-simple-select-label">Stories</InputLabel>
                     <Select
                         labelId="demo-simple-select-label"
@@ -84,8 +84,8 @@ function App() {
                     </Select>
                 </FormControl>
             </Box> by
-            <Box sx={{ minWidth: 120 }}>
-                <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
+            <Box sx={{ minWidth: 100 }}>
+                <FormControl className={"filterBox"} sx={{ m: 1, minWidth: 100, marginRight: 25 }} size="small">
                     <InputLabel id="demo-simple-select-label">Popularity</InputLabel>
                     <Select
                         labelId="demo-simple-select-label"
@@ -101,8 +101,8 @@ function App() {
                     </Select>
                 </FormControl>
             </Box> for
-            <Box sx={{ minWidth: 120 }}>
-                <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
+            <Box sx={{ minWidth: 100 }}>
+                <FormControl className={"filterBox"} sx={{ m: 1, minWidth: 100 }} size="small">
                     <InputLabel id="demo-simple-select-label">All Time</InputLabel>
                     <Select
                         labelId="demo-simple-select-label"

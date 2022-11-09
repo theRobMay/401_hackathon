@@ -60,11 +60,11 @@ a {
 
 .filterBar {
     display: flex;
-    margin-top: 60px;
-    padding-top: 15px;
+    margin-top: 20px;
+    padding-top: 25px;
     margin-left: 4px;
     margin-bottom: 0;
-
+    align-items: flex-end;
 
 
 }
