@@ -120,8 +120,18 @@ function App() {
                         <MenuItem value={30}>Custom range</MenuItem>
                     </Select>
                 </FormControl>
-            </Box></p>
+            </Box>
+           
+           
+                <div className="shareResults">
+                    <p>949 results (0.001 seconds)</p>
+                        <img src="https://img.icons8.com/material-outlined/24/000000/share.png" alt="share"/>
+                </div>
+            </p>
 
+
+
+            
             {/*<div className = "dropDownMenuContainer">*/}
 
             {/*    <span className="dropDownSearch">*/}
@@ -138,7 +148,15 @@ function App() {
                 </div>
             </div>
 
-
+            <div className="squares">
+                <square>1</square>
+                <square>2</square>
+                <square>3</square>
+                <square>4</square>
+                <square>5</square>
+                <square>6</square>
+                <square>></square>
+            </div>
 
 
       <footer className="footer_container">
